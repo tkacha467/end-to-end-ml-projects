@@ -13,7 +13,7 @@ The goal of this repository is to strengthen conceptual understanding while foll
 Implements Linear Regression with Backward Feature Elimination using cross-validation to identify the most impactful predictors.
 Demonstrates model evaluation using R² score.
 
-2️⃣ forward_feature_selection.ipynb
+2️⃣ auto_mpg_forward_feature_selection.ipynb
 
 Implements Forward Feature Selection to iteratively add significant features based on model performance improvement.
 
