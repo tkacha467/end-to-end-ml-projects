@@ -7,7 +7,8 @@ The focus is on practical modeling, feature selection strategies, hyperparameter
 The goal of this repository is to strengthen conceptual understanding while following clean coding practices and reproducible experimentation workflows.
 
 📂 Repository Structure
-1️⃣ backward_feature_elimination.ipynb
+
+1️⃣auto_mpg_backward_elimination.ipynb
 
 Implements Linear Regression with Backward Feature Elimination using cross-validation to identify the most impactful predictors.
 Demonstrates model evaluation using R² score.
