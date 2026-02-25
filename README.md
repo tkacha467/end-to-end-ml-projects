@@ -123,6 +123,54 @@ Evaluate model performance using confusion matrix and accuracy
 
 This notebook demonstrates how categorical data must be converted into numerical form before applying distance-based algorithms.
 
+7️⃣ naivebayes_breastcancer_models.py
+
+Implements three variations of Naive Bayes classification on the Breast Cancer Wisconsin dataset.
+
+This script compares the performance of:
+
+Multinomial Naive Bayes
+
+Complement Naive Bayes
+
+Bernoulli Naive Bayes
+
+📌 Objective
+
+Classify tumors as malignant or benign using probability-based classification methods and compare how different Naive Bayes variants perform on the same dataset.
+
+⚙️ Implementation Workflow
+
+Load Breast Cancer dataset using load_breast_cancer
+
+Split the dataset into training and testing sets (70:30)
+
+Apply MinMax scaling to ensure non-negative feature values
+
+Convert features into binary format for Bernoulli Naive Bayes
+
+Train each Naive Bayes model separately
+
+Evaluate predictions using:
+
+Accuracy Score
+
+Confusion Matrix
+
+🔍 Key Learning Points
+
+Understanding the probabilistic foundation of Naive Bayes
+
+Observing how data distribution affects model performance
+
+Comparing different Naive Bayes variants on continuous data
+
+Recognizing that certain Naive Bayes types are better suited for specific data formats
+
+📊 Observations
+
+Since the Breast Cancer dataset contains continuous numerical features, some Naive Bayes variants may not perform as optimally as models designed for continuous distributions. This experiment highlights the importance of selecting the correct model based on data characteristics.
+
 📌 Topics Covered
 
 Linear Regression
