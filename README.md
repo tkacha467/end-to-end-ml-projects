@@ -1,97 +1,134 @@
 Applied Machine Learning Models
 
-This repository contains structured implementations of core Machine Learning techniques using Python and scikit-learn.
+This repository contains practical implementations of essential Machine Learning algorithms built using Python and scikit-learn.
 
-The focus is on practical modeling, feature selection strategies, hyperparameter tuning, and performance evaluation using real datasets.
+The primary goal is to strengthen conceptual clarity through implementation. Each notebook focuses on applying algorithms to structured datasets, analyzing performance, and understanding how model choices affect results.
 
-The goal of this repository is to strengthen conceptual understanding while following clean coding practices and reproducible experimentation workflows.
+This repository emphasizes:
 
-📂 Repository Structure
+Real-world experimentation
 
-1️⃣auto_mpg_backward_elimination.ipynb
+Systematic feature selection
 
-Implements Linear Regression with Backward Feature Elimination using cross-validation to identify the most impactful predictors.
-Demonstrates model evaluation using R² score.
+Model tuning and validation
+
+Performance comparison
+
+Proper evaluation techniques
+
+📁 Project Structure
+1️⃣ auto_mpg_backward_elimination.ipynb
+
+Implements Linear Regression using a backward elimination strategy to identify the most relevant predictors.
+
+What it demonstrates:
+
+Removing features step-by-step based on statistical relevance
+
+Validating model performance using cross-validation
+
+Evaluating regression quality using R² score
+
+Interpreting feature contribution
 
 2️⃣ auto_mpg_forward_feature_selection.ipynb
 
-Implements Forward Feature Selection to iteratively add significant features based on model performance improvement.
+Applies forward selection for building an optimized regression model.
+
+What it demonstrates:
+
+Incrementally adding features
+
+Measuring improvement after each addition
+
+Selecting the most impactful combination of variables
 
 3️⃣ svm_grid_search.ipynb
 
-Applies Support Vector Machine (SVM) with Grid Search for hyperparameter tuning across multiple kernels.
-Demonstrates model optimization using cross-validation.
+Builds and tunes a Support Vector Machine classifier.
+
+What it demonstrates:
+
+Testing multiple kernel functions
+
+Applying Grid Search for parameter optimization
+
+Selecting the best model using cross-validation
+
+Evaluating generalization performance
 
 4️⃣ confusion_matrix_analysis.ipynb
 
-Implements classification evaluation using confusion matrix and related performance metrics such as accuracy, precision, recall, and F1-score.
+Explores classification model evaluation techniques.
+
+What it demonstrates:
+
+Constructing and interpreting confusion matrices
+
+Calculating Accuracy, Precision, Recall, and F1-score
+
+Understanding different types of classification errors
+
+Comparing model performance using multiple metrics
 
 5️⃣ knn_breastcancer_implementation.ipynb
 
-Implements K-Nearest Neighbors (KNN) classification on the Breast Cancer Wisconsin dataset.
+Implements K-Nearest Neighbors (KNN) for tumor classification using the Breast Cancer dataset.
 
-This notebook demonstrates:
+What it demonstrates:
 
-Loading built-in dataset using load_breast_cancer
+Loading and preparing the dataset
 
-Splitting data into training and testing sets
+Splitting into training and testing sets
 
-Training KNN models with different values of K (1 to 7)
+Training models with different values of K (1–7)
 
-Evaluating model performance using:
+Comparing performance across multiple K values
 
-Confusion Matrix
+Evaluating predictions using accuracy and confusion matrix
 
-Accuracy Score
-
-Comparing accuracy across multiple neighbor values to identify optimal K
-
-The implementation highlights how model performance changes as the number of neighbors varies and reinforces understanding of distance-based classification.
+This notebook highlights how distance-based algorithms behave when the number of neighbors changes.
 
 6️⃣ knn_categorical_job_prediction.ipynb
 
-Implements K-Nearest Neighbors (KNN) classification on a small categorical dataset to predict whether a candidate receives a job offer.
+Applies KNN to a fully categorical dataset for predicting job selection outcomes.
 
-This notebook demonstrates how to apply KNN on purely categorical data by converting it into numerical form before training the model.
+Objective:
+Determine whether a candidate receives a job offer (Yes/No) based on academic and skill-related attributes.
 
-📌 Problem Statement
-
-Predict Job_offered (Yes/No) based on candidate attributes:
+Attributes Used:
 
 CGPA
 
-Communication
+Communication Skills
 
 Aptitude
 
 Professional Skills
 
-⚙️ Implementation Workflow
+Implementation Steps:
 
-Load dataset from CSV
+Import dataset from CSV
 
-Convert target variable (Yes/No) into binary format (1/0)
+Convert target labels into binary format
 
-Apply One-Hot Encoding to transform categorical features into numerical vectors
+Transform categorical features using One-Hot Encoding
 
-Split dataset into training and testing sets (70:30)
+Split data into training and testing subsets
 
-Train KNN models with multiple values of K (1–5)
+Train KNN models with multiple K values (1–5)
 
-Evaluate performance using:
+Evaluate model performance using confusion matrix and accuracy
 
-Confusion Matrix
+This notebook demonstrates how categorical data must be converted into numerical form before applying distance-based algorithms.
 
-Accuracy Score
-
-
-🔍 Key Concepts Covered
+📌 Topics Covered
 
 Linear Regression
 
 K-Nearest Neighbors (KNN)
 
-Feature Selection (Forward & Backward)
+Feature Selection Methods
 
 Cross-Validation
 
@@ -99,11 +136,11 @@ Hyperparameter Tuning
 
 Support Vector Machines (SVM)
 
-Model Evaluation Metrics
+Classification Metrics
 
-Confusion Matrix Analysis
+Confusion Matrix Evaluation
 
-🛠 Technologies Used
+🧰 Tools & Libraries
 
 Python
 
@@ -113,4 +150,6 @@ Pandas
 
 Scikit-learn
 
-Matplotlib / Seaborn
+Matplotlib
+
+Seaborn
