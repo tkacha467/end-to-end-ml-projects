@@ -48,6 +48,43 @@ Comparing accuracy across multiple neighbor values to identify optimal K
 
 The implementation highlights how model performance changes as the number of neighbors varies and reinforces understanding of distance-based classification.
 
+6️⃣ knn_categorical_job_prediction.ipynb
+
+Implements K-Nearest Neighbors (KNN) classification on a small categorical dataset to predict whether a candidate receives a job offer.
+
+This notebook demonstrates how to apply KNN on purely categorical data by converting it into numerical form before training the model.
+
+📌 Problem Statement
+
+Predict Job_offered (Yes/No) based on candidate attributes:
+
+CGPA
+
+Communication
+
+Aptitude
+
+Professional Skills
+
+⚙️ Implementation Workflow
+
+Load dataset from CSV
+
+Convert target variable (Yes/No) into binary format (1/0)
+
+Apply One-Hot Encoding to transform categorical features into numerical vectors
+
+Split dataset into training and testing sets (70:30)
+
+Train KNN models with multiple values of K (1–5)
+
+Evaluate performance using:
+
+Confusion Matrix
+
+Accuracy Score
+
+
 🔍 Key Concepts Covered
 
 Linear Regression
