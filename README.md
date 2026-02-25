@@ -17,6 +17,7 @@ Performance comparison
 Proper evaluation techniques
 
 📁 Project Structure
+
 1️⃣ auto_mpg_backward_elimination.ipynb
 
 Implements Linear Regression using a backward elimination strategy to identify the most relevant predictors.
