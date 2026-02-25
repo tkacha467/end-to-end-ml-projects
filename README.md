@@ -26,9 +26,33 @@ Demonstrates model optimization using cross-validation.
 
 Implements classification evaluation using confusion matrix and related performance metrics such as accuracy, precision, recall, and F1-score.
 
+5️⃣ knn_breastcancer_implementation.ipynb
+
+Implements K-Nearest Neighbors (KNN) classification on the Breast Cancer Wisconsin dataset.
+
+This notebook demonstrates:
+
+Loading built-in dataset using load_breast_cancer
+
+Splitting data into training and testing sets
+
+Training KNN models with different values of K (1 to 7)
+
+Evaluating model performance using:
+
+Confusion Matrix
+
+Accuracy Score
+
+Comparing accuracy across multiple neighbor values to identify optimal K
+
+The implementation highlights how model performance changes as the number of neighbors varies and reinforces understanding of distance-based classification.
+
 🔍 Key Concepts Covered
 
 Linear Regression
+
+K-Nearest Neighbors (KNN)
 
 Feature Selection (Forward & Backward)
 
