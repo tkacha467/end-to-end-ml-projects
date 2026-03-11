@@ -171,15 +171,27 @@ Recognizing that certain Naive Bayes types are better suited for specific data f
 
 Since the Breast Cancer dataset contains continuous numerical features, some Naive Bayes variants may not perform as optimally as models designed for continuous distributions. This experiment highlights the importance of selecting the correct model based on data characteristics.
 
-8️⃣ randomforest_pima_diabetes.ipynb
+8️⃣ tree_models_pima_diabetes.ipynb
 
-This notebook implements a Random Forest classification model to predict diabetes using the Pima Indians Diabetes dataset.
+This notebook implements and compares tree-based classification models using the Pima Indians Diabetes dataset.
 
 📌 Objective
 
-Predict whether a patient is diabetic or non-diabetic (Outcome: 1 or 0) based on medical diagnostic measurements.
+Predict whether a patient is diabetic (1) or non-diabetic (0) based on medical diagnostic attributes and compare the performance of multiple tree-based machine learning models.
+
+Models Implemented
+
+The notebook trains and evaluates the following models:
+
+Random Forest Classifier
+
+Decision Tree (ID3 – using Entropy)
+
+Decision Tree (CART – using Gini Index)
 
 Attributes Used
+
+The dataset contains the following medical attributes:
 
 Pregnancies
 
@@ -197,17 +209,29 @@ DiabetesPedigreeFunction
 
 Age
 
+Target variable:
+
+Outcome → Diabetes result (0 = No, 1 = Yes)
+
 ⚙️ Implementation Workflow
+
+The notebook follows a structured machine learning workflow:
 
 Load the Pima Indians Diabetes dataset from CSV using pandas
 
-Separate dataset into features (X) and target variable (Outcome)
+Separate the dataset into features (X) and target variable (Outcome)
 
 Split the dataset into training and testing sets (80:20) using train_test_split
 
 Apply StandardScaler for feature normalization
 
-Train a RandomForestClassifier with multiple decision trees (n_estimators = 150)
+Train three different models:
+
+Random Forest
+
+Decision Tree (ID3 using Entropy)
+
+Decision Tree (CART using Gini)
 
 Generate predictions on the test dataset
 
@@ -219,22 +243,51 @@ Classification Report
 
 Confusion Matrix
 
-Analyze feature importance to understand which medical factors influence the prediction most
+📊 Visualizations Included
+
+To better understand model behavior, the notebook includes several visualizations:
+
+Confusion Matrix Heatmaps for each model
+
+Feature Importance graph for Random Forest
+
+Accuracy comparison bar chart across all models
+
+These visualizations help analyze model performance and interpret prediction results.
 
 🔍 Key Learning Points
 
-Understanding how ensemble learning improves classification performance
+Understanding ensemble learning through Random Forest
 
-Observing how Random Forest combines multiple decision trees to reduce overfitting
+Comparing different decision tree splitting criteria
+
+Observing how entropy (ID3) and gini (CART) affect tree construction
 
 Evaluating classification models using multiple performance metrics
 
-Interpreting feature importance to understand the influence of different predictors
+Interpreting feature importance to identify influential predictors
 
 📊 Observations
 
-Random Forest is effective for this dataset because it can capture non-linear relationships between medical attributes and diabetes risk.
-The model also provides feature importance scores, helping identify which features contribute most to the prediction.
+Random Forest typically achieves higher accuracy than a single decision tree because it combines predictions from multiple trees using bagging and majority voting, which helps reduce overfitting.
+
+Decision Trees using Entropy (ID3) and Gini Index (CART) provide interpretable models but may have lower generalization performance compared to ensemble methods.
+
+📌 Topics Covered in this Notebook
+
+Decision Tree Algorithms (ID3 & CART)
+
+Random Forest Classification
+
+Feature Scaling
+
+Model Evaluation Metrics
+
+Confusion Matrix Analysis
+
+Feature Importance Interpretation
+
+Model Performance Comparison
 
 
 📌 Topics Covered
