@@ -171,6 +171,72 @@ Recognizing that certain Naive Bayes types are better suited for specific data f
 
 Since the Breast Cancer dataset contains continuous numerical features, some Naive Bayes variants may not perform as optimally as models designed for continuous distributions. This experiment highlights the importance of selecting the correct model based on data characteristics.
 
+8️⃣ randomforest_pima_diabetes.ipynb
+
+This notebook implements a Random Forest classification model to predict diabetes using the Pima Indians Diabetes dataset.
+
+📌 Objective
+
+Predict whether a patient is diabetic or non-diabetic (Outcome: 1 or 0) based on medical diagnostic measurements.
+
+Attributes Used
+
+Pregnancies
+
+Glucose
+
+BloodPressure
+
+SkinThickness
+
+Insulin
+
+BMI
+
+DiabetesPedigreeFunction
+
+Age
+
+⚙️ Implementation Workflow
+
+Load the Pima Indians Diabetes dataset from CSV using pandas
+
+Separate dataset into features (X) and target variable (Outcome)
+
+Split the dataset into training and testing sets (80:20) using train_test_split
+
+Apply StandardScaler for feature normalization
+
+Train a RandomForestClassifier with multiple decision trees (n_estimators = 150)
+
+Generate predictions on the test dataset
+
+Evaluate model performance using:
+
+Accuracy Score
+
+Classification Report
+
+Confusion Matrix
+
+Analyze feature importance to understand which medical factors influence the prediction most
+
+🔍 Key Learning Points
+
+Understanding how ensemble learning improves classification performance
+
+Observing how Random Forest combines multiple decision trees to reduce overfitting
+
+Evaluating classification models using multiple performance metrics
+
+Interpreting feature importance to understand the influence of different predictors
+
+📊 Observations
+
+Random Forest is effective for this dataset because it can capture non-linear relationships between medical attributes and diabetes risk.
+The model also provides feature importance scores, helping identify which features contribute most to the prediction.
+
+
 📌 Topics Covered
 
 Linear Regression
