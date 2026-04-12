@@ -1,6 +1,6 @@
 # 🚀 End-to-End Machine Learning Projects
 
-This repository contains a collection of machine learning implementations and mini-projects covering core concepts taught in class. Each notebook demonstrates a specific algorithm with practical implementation using real-world datasets.
+This repository contains implementations of core Machine Learning algorithms and techniques using real datasets. Each notebook demonstrates a specific concept with practical application.
 
 ---
 
@@ -27,12 +27,11 @@ This repository contains a collection of machine learning implementations and mi
 ### 🔹 Model Evaluation
 
 * Confusion Matrix
-* Accuracy, Precision, Recall
+* Accuracy Metrics
 
 ### 🔹 Regression
 
 * Simple Linear Regression
-* Multiple Linear Regression
 
 ### 🔹 Clustering
 
@@ -51,36 +50,42 @@ This repository contains a collection of machine learning implementations and mi
 * Titanic Dataset
 * Breast Cancer Dataset
 * Auto MPG Dataset
-* Custom Sample Datasets
+* Custom Datasets
+
+---
+
+## 📁 Project Files
+
+```bash
+All_type_linkage_cluster.ipynb
+Association_Rules_market_basket.ipynb
+Knn_breastcancer_implementation.ipynb
+Knn_dataset.ipynb
+SVM_Grid_Search_with_all_kernels_1.ipynb
+Spambase_Classification.ipynb
+auto_mpg_backward_elimination.ipynb
+auto_mpg_forward_feature_selection.ipynb
+confusion_matrix.ipynb
+kmeans_clustering.ipynb
+naivebayes_breastcancer.ipynb
+randomforest_DecisionTree_pimadiabetes.ipynb
+simpleregression_profit&CPU&SAL.ipynb
+titanic_survival_lr_svm.ipynb
+spambase.csv
+knn_dataset.csv
+README.md
+```
 
 ---
 
 ## 🧠 Key Highlights
 
-* Implementation of multiple ML algorithms from scratch and using sklearn
-* Comparison of classification models on the same dataset
+* Implementation of multiple ML algorithms using sklearn
+* Model comparison on real datasets
 * Hyperparameter tuning using GridSearchCV
-* Feature importance and selection techniques
-* Clean and structured Jupyter Notebooks
-
----
-
-## 📁 Project Structure
-
-```
-├── classification_comparison.ipynb
-├── knn_dataset.ipynb
-├── naivebayes_breastcancer.ipynb
-├── randomforest_DecisionTree_pimadiabetes.ipynb
-├── SVM_Grid_Search_with_all_kernels.ipynb
-├── confusion_matrix.ipynb
-├── kmeans_clustering.ipynb
-├── Association_Rules_market_basket.ipynb
-├── All_type_linkage_cluster.ipynb
-├── simple_linear_regression.ipynb
-├── multiple_linear_regression.ipynb
-└── README.md
-```
+* Feature selection techniques
+* Clustering and association rule learning
+* Clean and structured notebooks
 
 ---
 
@@ -98,7 +103,7 @@ This repository contains a collection of machine learning implementations and mi
 
 ## 🎯 Objective
 
-The goal of this repository is to build a strong foundation in machine learning by implementing core algorithms and understanding their behavior on different datasets.
+To build strong fundamentals in Machine Learning by implementing algorithms and understanding their performance on different datasets.
 
 ---
 
